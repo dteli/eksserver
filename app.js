@@ -22,5 +22,5 @@ app.use('/xw', xwC);
 app.use('/userprefs', userprefsC);
 
 
-app.listen(3014,
-  () => console.log('listening on 3014'));
+app.listen(process.env.PORT,
+  () => console.log('listening on magical port'));

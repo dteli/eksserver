@@ -4,6 +4,7 @@
   "description": "backend for the eksward app",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "nodemon"
   },
   "author": "ETD",

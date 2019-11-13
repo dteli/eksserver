@@ -1,8 +1,7 @@
 const Seq = require('sequelize');
 
-const seq = new Seq('eksward', 'winfield', '', {
-  host: 'localhost',
-  dialect: 'postgres'
+const seq = new Seq(process.env.DATABASE_URL, {
+  dialect: "postgres"
 });
 
 seq.authenticate().then(
