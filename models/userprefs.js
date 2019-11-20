@@ -6,6 +6,12 @@ module.exports = (seq, DT) => {
 
   UserPrefs.init({
     // store prefs here
+    firstName: {
+      type: DT.STRING
+    },
+    lastName: {
+      type: DT.STRING
+    }
   }, {
     sequelize: seq,
     modelName: 'userprefs'
